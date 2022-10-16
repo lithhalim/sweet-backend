@@ -10,7 +10,7 @@ module.exports=database.define("likeOnPostes",{
         type:STRING,
     },
     person_do_like_image:{
-        type:TEXT,
+        type:TEXT
     },
     productName:{
         type:STRING
@@ -22,7 +22,7 @@ module.exports=database.define("likeOnPostes",{
         type:STRING
     },
     post_liked_id:{
-        type:STRING,
+        type:STRING
     }
 })
 
