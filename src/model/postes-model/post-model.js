@@ -25,20 +25,20 @@ const  postes_model=database.define("posts",{
 
 
 //---------------------------------------------all relation on postes ------------------------------------//
-// const post_comment=require("./post_comment");
+const post_comment=require("./post_comment");
 
-// postes_model.hasMany(post_comment,{
-//     constraints: false,
-//     timestamps: false,
-//     foreignKey:"commentOnPostId",
-//     sourceKey:"postid"
-//   })
-//   post_comment.belongsTo(postes_model,{
-//     constraints: false,
-//     timestamps: false,
-//     foreignKey:"commentOnPostId",
-//     targetKey:"postid"
-//   })
+postes_model.hasMany(post_comment,{
+    constraints: false,
+    timestamps: false,
+    foreignKey:"commentOnPostId",
+    sourceKey:"postid"
+  })
+  post_comment.belongsTo(postes_model,{
+    constraints: false,
+    timestamps: false,
+    foreignKey:"commentOnPostId",
+    targetKey:"postid"
+  })
 
 
 
