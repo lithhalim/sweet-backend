@@ -13,17 +13,14 @@ const  postes_model=database.define("posts",{
         type:STRING,
     },
     price:{
-      type:INTEGER
+      type:STRING
     },
     quantity:{
-      type:INTEGER,
+      type:STRING,
     },
     catagory:{
       type:STRING,
     },
-    personDoPostId:{
-        type:STRING,
-    }
 })
 
 
@@ -40,21 +37,6 @@ postes_model.hasMany(post_comment,{
     constraints: false,
     timestamps: false,
     foreignKey:"commentOnPostId",
-    targetKey:"postid"
-  })
-
-const post_like=require("./post_like");
-
-postes_model.hasMany(post_like,{
-    constraints: false,
-    timestamps: false,
-    foreignKey:"post_liked_id",
-    sourceKey:"postid"
-  })
-  post_like.belongsTo(postes_model,{
-    constraints: false,
-    timestamps: false,
-    foreignKey:"post_liked_id",
     targetKey:"postid"
   })
 

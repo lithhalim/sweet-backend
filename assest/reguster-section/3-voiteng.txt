@@ -1,5 +1,0 @@
-{
-"id": uuid,(auto),
-"myVoite": string,
-"movieId":integer,
-},

@@ -1,7 +1,0 @@
-{
-"id": uuid,(auto),
-"movieIdApi":integer,
-"poster_path": text,
-"title": "string",
-"favorateId":string(forgin)
-},

@@ -1,5 +1,0 @@
-{
-"id": uuid,(auto),
-"phoneNumberid":integer,
-"phoneNumber":string
-},

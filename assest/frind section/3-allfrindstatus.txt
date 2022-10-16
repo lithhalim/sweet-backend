@@ -1,5 +1,0 @@
-{
-"idmodefy": uuid,(auto)
-"status":string,
-"allfrindid":integer,(forginKey)----->regusterId
-},

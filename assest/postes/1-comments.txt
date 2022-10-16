@@ -1,7 +1,0 @@
-{
-"commentId": string,primerykey---
-"fullName": string,
-"text": string,
-"image": string,
-"commentOnPostId":string,forginkey--(postId)
-},

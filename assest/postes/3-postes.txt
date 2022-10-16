@@ -1,9 +1,0 @@
-{
-"postId": string,primerykey---
-"fullName": string,
-"text": string,
-"image": string,
-"personDoPost":string,forginkey--(regusterid)
-"comment":[string],
-"like":[string]
-},
