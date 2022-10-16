@@ -1,5 +1,4 @@
 const { TEXT, INTEGER } = require("sequelize")
-const { STRING } = require("sequelize")
 const database=require("../../database/database")
 
 const  postes_model=database.define("posts",{
@@ -13,10 +12,10 @@ const  postes_model=database.define("posts",{
         type:TEXT,
     },
     price:{
-      type:TEXT
+      type:INTEGER
     },
     quantity:{
-      type:TEXT,
+      type:INTEGER,
     },
     catagory:{
       type:TEXT,
