@@ -12,6 +12,9 @@ router.post("/createpost",creat_post)
 const Get_all_post=require("../../controllers/postes-controllers/get-allpostes");
 router.get("/getpostes",Get_all_post)
 
+const Get_Catagory=require("../../controllers/postes-controllers/get-catagory");
+router.get("/getpostesCatagory/:data",Get_Catagory)
+
 
 const get_page_product=require("../../controllers/postes-controllers/get-Product");
 router.get("/getproductpage/:data",get_page_product)
