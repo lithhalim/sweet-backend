@@ -6,11 +6,11 @@ const router = express.Router()
 
 
 //------------------------------------ postes all data ----------------------------------------//
-const Create_post_controllers=require("../../controllers/postes-controllers/create-post");
-router.post("/createpost",Create_post_controllers)
+// const Create_post_controllers=require("../../controllers/postes-controllers/create-post");
+// router.post("/createpost",Create_post_controllers)
 
-// const Get_all_post=require("../../controllers/postes-controllers/get-allpostes");
-// router.get("/getpostes",Get_all_post)
+const Get_all_post=require("../../controllers/postes-controllers/get-allpostes");
+router.get("/getpostes",Get_all_post)
 
 
 // const get_page_product=require("../../controllers/postes-controllers/get-Product");

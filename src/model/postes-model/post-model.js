@@ -10,16 +10,16 @@ const  postes_model=database.define("posts",{
       type:TEXT,
     },
     Product:{
-        type:STRING,
+        type:TEXT,
     },
     price:{
-      type:STRING
+      type:TEXT
     },
     quantity:{
-      type:STRING,
+      type:TEXT,
     },
     catagory:{
-      type:STRING,
+      type:TEXT,
     }
 })
 
