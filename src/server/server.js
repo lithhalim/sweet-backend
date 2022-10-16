@@ -48,8 +48,8 @@ const authntication_routes=require("../routes/authntication_routes/authntication
 app.use(authntication_routes)
 
 
-// const Postes_routes=require("../routes/postes_routes/postes_routes");
-// app.use(Postes_routes)
+const Postes_routes=require("../routes/postes_routes/postes_routes");
+app.use(Postes_routes)
 
 
 
