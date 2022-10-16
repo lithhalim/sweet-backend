@@ -1,0 +1,7 @@
+{
+"shareId": string,primerykey---
+"fullName": string,
+"text": string,
+"image": string,
+"sharePostId":string,forginkey--(postId)
+},

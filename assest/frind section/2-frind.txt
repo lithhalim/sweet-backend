@@ -1,0 +1,7 @@
+{
+"myfrindid": uuid,(auto)
+"fullName":string,
+"image":string,
+"status":boolean,
+"frindid":integer,(forginKey)
+},

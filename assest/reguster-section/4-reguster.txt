@@ -1,0 +1,13 @@
+{
+"fullName": string,
+"phoneNumber": (includes)->(phonenumber)
+"id": uuid,(auto)
+"email": string,
+"gender": string,
+"role": string,
+"place": string,
+"movie": [string],(includes)->(movei)
+"favorate": [string],(includes)->(voiteng)
+"myVoite": [string],(includes)->(voiteng)
+"image":string
+},
