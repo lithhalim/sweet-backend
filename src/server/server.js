@@ -53,6 +53,20 @@ app.use(Postes_routes)
 
 
 
+
+
+
+
+//-----------------------------------------Stripe section --------------------------------------------//
+
+
+
+const stripe_controlle=require("../controllers/stripe-controllers/stripe-controllers");
+app.post("/create-checkout-session",stripe_controlle)
+
+
+
+
 //----------------------------------------Error Handeler-----------------------------------------------------//
 const NotFound404=require("../middelware/404-500/404");
 const ErrorHandeler=require("../middelware/404-500/500");
