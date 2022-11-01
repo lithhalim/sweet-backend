@@ -6,8 +6,6 @@ const reguster = database.define('regusters', {
     // Model attributes are defined here
     regusterid:{
       type:STRING,
-      primaryKey:true,
-      allowNull:false
     },
     fullName: {
       type:STRING,
@@ -20,10 +18,6 @@ const reguster = database.define('regusters', {
     password: {//VERTUAL MEAN DONT SAVED IN DATABASE YOU CAN USE IN BACL END YOU JUST UNSERTET LIKE PROPERTY IN OBJECT
       type: STRING,
       allowNull: false
-    },
-    phoneNumber: {//VERTUAL MEAN DONT SAVED IN DATABASE YOU CAN USE IN BACL END YOU JUST UNSERTET LIKE PROPERTY IN OBJECT
-      type: STRING,
-      defaultValue:""
     },
     gender: {//VERTUAL MEAN DONT SAVED IN DATABASE YOU CAN USE IN BACL END YOU JUST UNSERTET LIKE PROPERTY IN OBJECT
       type: STRING,

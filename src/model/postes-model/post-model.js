@@ -1,24 +1,36 @@
 const { TEXT, INTEGER } = require("sequelize")
 const database=require("../../database/database")
 
+
+
 const  postes_model=database.define("posts",{
-    postid:{
-      type:TEXT
+    Price:{
+      type:INTEGER
     },
-    image:{
-      type:TEXT,
-    },
-    Product:{
+    calories:{
         type:TEXT,
     },
-    price:{
-      type:INTEGER
+    categories:{
+      type:TEXT
+    },
+    description:{
+      type:TEXT,
+    },
+    popularity:{
+      type:TEXT,
+    },
+    productName:{
+      type:TEXT,
+    },
+    type:{
+      type:TEXT,
+    },
+    postId:{
+      type:TEXT,
     },
     quantity:{
       type:INTEGER,
-    },
-    catagory:{
-      type:TEXT,
+      defaultValue:1
     }
 })
 
@@ -30,18 +42,32 @@ postes_model.hasMany(post_comment,{
     constraints: false,
     timestamps: false,
     foreignKey:"commentOnPostId",
-    sourceKey:"postid"
+    sourceKey:"postId"
   })
   post_comment.belongsTo(postes_model,{
     constraints: false,
     timestamps: false,
     foreignKey:"commentOnPostId",
-    targetKey:"postid"
+    targetKey:"postId"
   })
 
 
 
 
+const post_Images=require("./post_Images");
+
+postes_model.hasMany(post_Images,{
+    constraints: false,
+    timestamps: false,
+    foreignKey:"ImageOnPostId",
+    sourceKey:"postId"
+  })
+  post_Images.belongsTo(postes_model,{
+    constraints: false,
+    timestamps: false,
+    foreignKey:"ImageOnPostId",
+    targetKey:"postId"
+  })
 
 
 module.exports=postes_model

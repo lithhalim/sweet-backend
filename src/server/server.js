@@ -53,6 +53,13 @@ app.use(Postes_routes)
 
 
 
+const modelPostes=require("../model/postes-model/post-model")
+const ImageModel=require("../model/postes-model/post_Images")
+app.get('/getAllItem',async(req,res)=>{
+  res.json(await modelPostes.findAll({include:{model:ImageModel}}))
+})
+
+
 
 
 
